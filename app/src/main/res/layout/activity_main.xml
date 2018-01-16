@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aiuidemo.www.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="唤醒"
+            android:id="@+id/button3"
+            android:onClick="ClickTest3Method"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="人工智能"
+            android:id="@+id/button4"
+            android:onClick="ClickRecordMethod"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button3"
+            android:layout_toEndOf="@+id/button3"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/result_txt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#53868B"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="调试日志"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:id="@+id/textView" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                ></LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="清空显示"
+                android:id="@+id/button"
+                android:onClick="ClickCleanMethod"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/mNlpText"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_below="@+id/button3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarFadeDuration="2000"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
